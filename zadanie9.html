@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Zadanie9 - Piotr Tworzowski</title>
+    </head>
+    <body>
+        <div style="color:green; font-size: 31px;">
+            <script language="JavaScript">
+                var D1_two = prompt("Pierwszy dzien to ", "");
+                var H1_two = prompt("Pierwsza godzina to ", "");
+
+                var D2_two = prompt("Drugi dzien to ", "");
+                var H2_two = prompt("Druga godzina to ", "");
+
+                if(D1_two <= 31 && D2_two >= 1){
+                    var dif_two = ((Math.abs(D2_two - D1_two)+1)*24-Math.abs((parseInt(H1_two)+parseInt((24-H2_two)))))*60*60;
+                    document.write("Wynik(sec): " + dif_two + "<br>");
+                }else{
+                    alert("Ups! Jedna z podanych dni miesiaca nie zgadza sie!");
+                }
+            </script>
+        </div>
+    </body>
+</html>

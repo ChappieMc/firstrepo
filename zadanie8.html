@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Zadanie8 - Piotr Tworzowski</title>
+    </head>
+    <body>
+        <div style="color:green; font-size: 31px;">
+            <script language="JavaScript">
+                var D1_two = prompt("Pierwszy dzien to ", "");
+                var D2_two = prompt("Drugi dzien to ", "");
+
+                if(D1_two <= 31 && D2_two >= 1){
+                    var dif_two = (D2_two - D1_two)*24*60*60;
+                    document.write("Wynik(sec): " + Math.abs(dif_two) + "<br>");
+                }else{
+                    alert("Ups! Jedna z podanych dni miesiaca nie zgadza sie!");
+                }
+            </script>
+        </div>
+    </body>
+</html>
