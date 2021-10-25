@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>Zadanie15 - Piotr Tworzowski</title>
+    <script type="text/javascript">
+        function setup_tworzowski(){
+            var x1_two = prompt("Pierwsza liczba: ", "");
+            var x2_two = prompt("Druga liczba: ", "");
+
+            var imie_two = "Piotr";
+            var y_two =  3*x1_two^(imie_two.length/imie_two.length+2);
+            var y1_two =  2*Math.cos(x1_two)+2*Math.sin(x1_two);
+
+            var radian_two = (x1_two*Math.PI)/180;
+
+            document.write(x2_two + "=1 | " + x2_two + "=2<br>y= " + y_two + "<br>y1= " + y1_two + "<br>radian z x1= " + radian_two);
+
+        }
+    </script>
+</head>
+<body>
+    <input type="button" onclick="setup_tworzowski()" value="Kliknij mnie!">
+</body>
+</html>
