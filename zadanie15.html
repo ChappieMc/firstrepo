@@ -1,0 +1,27 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie15 - Piotr Tworzowski</title>
+</head>
+<body>
+    <div style="color:red; font-size:75px;">
+        <script type="text/javascript">
+            var x1_two = prompt("Liczba X1: ", "");
+            var x2_two = prompt("Liczba X2: ", "");
+            var L_two = prompt("Podaj ilość liter imienia: ", "");
+
+            document.write("Wczytane liczby: ");
+            document.write("<br>Liczba X1: <b>" + x1_two + "</b>");
+            document.write("<br>Liczba X2: <b>" + x2_two + "</b><br><br>");
+
+            var y_two = 3 * Math.pow(x1_two, L_two / (L_two+2));
+            var y1_two = 2 * Math.cos(x1_two) + 2 * Math.sin(x1_two);
+            var y2_two = Math.pow(Math.pow(x1_two, 5) + 2 * Math.pow(x2_two, 4), 1/3) * (x1_two - x2_two);
+
+            document.write("<b>Y</b> = 3 * x1 ^ (Liczba liter imienia/Liczba liter imienia + 2) = " + y_two + "<br>");
+            document.write("<b>Y1</b> = 2 * cosX1 + 2 * sinX1= " + y1_two);
+            document.write("<br><b>Y2</b> = pierwiastek 3 stopnia z ((X1) ^ 5 + * (X2) ^ 4) * |X1 - X2| = " + y2_two);
+        </script>
+    </div>
+</body>
+</html>
