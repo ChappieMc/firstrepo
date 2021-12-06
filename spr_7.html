@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprawdzian zadanie 7 - Tworzowski Piotr</title>
+
+    <script type="text/javascript">
+        function save_tworzowski() {
+            var imie = document.querySelector('.imie').value;
+            var nazwisko = document.querySelector('.nazwisko').value;
+            var klasa = document.querySelector('.klasa').value;
+            var nr = document.querySelector('.nr').value;
+
+            alert(imie + " " + nazwisko + " " + klasa + " " + nr);
+        }
+    </script>
+
+</head>
+<body>
+    <input type="form" placeholder="Imie" class="imie"></form>
+    <input type="form" placeholder="Nazwisko" class="nazwisko"></form>
+    <input type="form" placeholder="Klasa" class="klasa"></form>
+    <input type="form" placeholder="Nr. w dzienniku" class="nr"></form>
+
+    <input class="button" type="button" value="Zapisz" onclick="save_tworzowski()"> 
+</body>
+</html>

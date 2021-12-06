@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Kartkowka 1 | Tworzowski Piotr</title>
+        <link rel="stylesheet" href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
+        <style>
+            * {
+                font-family: 'Gilroy', sans-serif;
+                font-size: 15px;
+            }
+            body {
+                background-color: #1f1f1f;
+            }
+            .home{
+                height: 40px;
+                width: 200px;
+                border-radius: 5px;
+                border: none;
+                background-color: #424242;
+                transition: .3s all ease-in-out;
+            }
+
+            .home:hover{
+                background-color: #4b4b4b;
+                transition: .2s all ease-in-out;
+            }
+
+            .button{
+                height: 40px;
+                width: 150px;
+                border-radius: 5px;
+                border: none;
+                background: linear-gradient(90deg, rgba(255,136,0,1) 0%, rgba(255,175,0,1) 50%, rgba(255,145,0,1) 100%);
+                font-weight: 600;
+                transition: .3s all ease-in-out;
+            }
+
+            .button:hover{
+                transform: scale(1.04);
+                transition: .2s all ease-in-out;
+            }
+            h2{
+                color: white;
+            }
+        </style>
+        <script>
+            function rzut_tworzowski() {
+                var s_two = document.querySelector('.s_two').value;
+                var r_two = document.querySelector('.r_two').value;
+
+                var max_two = 0;
+
+                for(var i = 1; i <= r_two; i++) {
+                    let random_two = Math.floor(Math.random() * s_two + 1);
+                    document.write("<br> - " + random_two);
+
+                    if(random_two > max_two) 
+                        max_two = random_two;
+                }
+                document.write("<br><br>Gratulacje! Wygrales! Twoja najwieksza liczba: " + max_two);
+            }
+        </script>
+    </head>
+    <body>
+        <div style="text-align: center;">
+            <h2>Tworzowski Piotr</h2><br>
+            <input type="form" placeholder="Szerokosc scianek" class="s_two home"></form>
+            <input type="form" placeholder="Ilosc rzutow" class="r_two home"></form>
+        
+            <input class="button" type="button" value="Rzucaj!" onclick="rzut_tworzowski()"> 
+        </div>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprawdzian zadanie 6 - Tworzowski Piotr</title>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            for(var i = 1; i < 5+1; i++){
+                document.querySelector('.ar').innerHTML += '<input type="form" placeholder="Ocena ' + i + '" class="a' + i + '"></form>';
+            }
+            for(var i = 1; i < 5+1; i++){
+                document.querySelector('.ar').innerHTML += '<input type="form" placeholder="Waga ' + i + '" class="b' + i + '"></form>';
+            }
+        };
+
+        function oblicz_tworzowski() {
+            var final = ((parseInt(document.querySelector('.a1').value)*parseInt(document.querySelector('.b1').value))
+            +(parseInt(document.querySelector('.a2').value)*parseInt(document.querySelector('.b2').value))
+            +(parseInt(document.querySelector('.a3').value)*parseInt(document.querySelector('.b3').value))
+            +(parseInt(document.querySelector('.a4').value)*parseInt(document.querySelector('.b4').value))
+            +(parseInt(document.querySelector('.a5').value)*parseInt(document.querySelector('.b5').value))
+            /(parseInt(document.querySelector('.b1').value)+parseInt(document.querySelector('.b2').value)
+            +parseInt(document.querySelector('.b3').value)+parseInt(document.querySelector('.b4').value)
+            +parseInt(document.querySelector('.b5').value)));
+            alert(final);
+        }
+    </script>
+
+</head>
+<body>
+    <div class="ar"></div>
+
+    <input class="button" type="button" value="Oblicz" onclick="oblicz_tworzowski()"> 
+</body>
+</html>
